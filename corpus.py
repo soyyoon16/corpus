@@ -8,6 +8,7 @@ by Dusty Phillips
 # store state for notes
 last_id = 0
 
+
 class Document:
     """
     Represents a single Document in the Corpus. A Document consists of
@@ -31,13 +32,12 @@ class Document:
 
     # how we convert an object to a string
     def __str__(self):
-        return f'{self.contents[:30]}...'
+        return f"{self.contents[:30]}..."
 
     # a __repr__ is supposed to be unambiguous and is called when no __str__
     # method is available
     def __repr__(self):
-        return f'{self.__class__.__name__}({self.contents[:30]}...,' \
-               f' {self.tags})'
+        return f"{self.__class__.__name__}({self.contents[:30]}...," f" {self.tags})"
 
     def match(self, filter):
         """
@@ -95,3 +95,6 @@ class Corpus:
         """Find all Documents that match the filter string"""
         return [doc for doc in self.docs if Document.match(filter)]
 
+    # corpus.py
+    def plotting():
+        pass  # Add a simple placeholder if this is missing
