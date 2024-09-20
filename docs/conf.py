@@ -6,9 +6,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u"corpus"
-copyright = u"2024, Soyoung Yoon"
-author = u"Soyoung Yoon"
+project = "corpus"
+copyright = "2024, Soyoung Yoon"
+author = "Soyoung Yoon"
 
 # -- General configuration ---------------------------------------------------
 
