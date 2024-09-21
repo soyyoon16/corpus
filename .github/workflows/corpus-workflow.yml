@@ -20,6 +20,9 @@ jobs:
 
     - name: Install package
       run: poetry install
+
+    - name: Add project root to PYTHONPATH
+      run: echo "PYTHONPATH=$PYTHONPATH:/home/runner/work/corpus/corpus" >> $GITHUB_ENV
     
     - name: Run pytest
       run: poetry run pytest
