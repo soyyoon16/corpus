@@ -21,9 +21,6 @@ jobs:
     - name: Install package
       run: poetry install
 
-    - name: Check file permissions
-      run: ls -l tests/test_ranks_and_frequencies.txt
-
     - name: Add project root to PYTHONPATH
       run: echo "PYTHONPATH=$PYTHONPATH:/home/runner/work/corpus/corpus" >> $GITHUB_ENV
     
